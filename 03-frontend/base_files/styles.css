@@ -1,158 +1,137 @@
-/* Universal styles */
-* {
-    box-sizing: border-box;
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Body and global styles */
-body {
-    background-color: #f4f4f4; /* Light gray background */
-    color: #333; /* Dark gray text color */
-}
-
-/* Header styling */
-header {
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
-    padding: 1rem; /* Space inside the header */
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .logo img {
+    width: 100px;
+  }
+  
+  .login-button {
+    float: right;
+    margin-right: 20px;
+    color: #fff;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* Place list styles */
+  #places-list {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .logo {
-    width: 50px; /* Adjust size as needed */
-}
-
-nav a {
-    color: #fff; /* White text for links */
-    text-decoration: none; /* No underline */
-    margin-left: 1rem; /* Space between links */
-}
-
-nav a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-/* Footer styling */
-footer {
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
-    padding: 1rem; /* Space inside the footer */
-    text-align: center; /* Center text */
-}
-
-/* Main content styling */
-main {
-    padding: 2rem; /* Space around the main content */
-}
-
-/* Form styling for login */
-form {
-    background-color: #fff; /* White background */
-    padding: 2rem; /* Space inside the form */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 400px; /* Maximum width */
-    margin: 0 auto; /* Center horizontally */
-}
-
-form h2 {
-    margin-bottom: 1rem; /* Space below the title */
-    color: #333; /* Title color */
-}
-
-form label {
-    display: block; /* Labels on their own line */
-    margin-bottom: 0.5rem; /* Space below the label */
-}
-
-form input, form textarea {
-    width: 100%; /* Full width */
-    padding: 0.5rem; /* Space inside the input */
-    margin-bottom: 1rem; /* Space below the input */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 4px; /* Slightly rounded corners */
-}
-
-/* Button styling */
-button {
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
-    border: none; /* No border */
-    padding: 0.75rem 1.5rem; /* Space inside the button */
-    border-radius: 4px; /* Slightly rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-}
-
-button:hover {
-    background-color: #555; /* Lighter shade on hover */
-}
-
-/* Filter section styling */
-#filter {
-    margin-bottom: 2rem; /* Space below the filter section */
-}
-
-#country-filter {
-    padding: 0.5rem; /* Space inside the select */
-    border-radius: 4px; /* Slightly rounded corners */
-    border: 1px solid #ddd; /* Light border */
-}
-
-/* Place cards styling */
-.place-card {
-    background-color: #fff; /* White background */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 10px; /* Rounded corners */
-    margin: 20px; /* Space around cards */
-    padding: 10px; /* Space inside cards */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    display: flex; /* Flexbox layout */
-    flex-direction: column; /* Stack items vertically */
-}
-
-.place-image {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners */
-}
-
-.place-info {
-    margin-top: 10px; /* Space above place info */
-}
-
-.details-button {
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
-    border: none; /* No border */
-    padding: 0.5rem 1rem; /* Space inside the button */
-    border-radius: 4px; /* Slightly rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-}
-
-.details-button:hover {
-    background-color: #555; /* Lighter shade on hover */
-}
-
-/* Place Details styling */
-.place-details {
-    margin-bottom: 2rem; /* Space below place details */
-}
-
-.place-image-large {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners */
-}
-
-.review-card {
-    background-color: #fff; /* White background */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 10px; /* Rounded corners */
-    margin: 20px; /* Space around cards */
-    padding: 10px; /* Space inside cards */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .place-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .place-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .details-button {
+    display: block;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .details-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Place details styles */
+  #place-details {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  #place-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Add review styles */
+  #add-review {
+    display: none; /* Hidden by default, shown if authenticated */
+  }
+  
+  #review-form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  #review-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #review-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #review-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer styles */
+  footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+  }

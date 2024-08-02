@@ -8,7 +8,8 @@ users = [
     {"email": "john@example.com", "password": "password123"},
     {"email": "jane@example.com", "password": "mysecurepassword"},
     {"email": "alice@example.com", "password": "alicepassword"},
-    {"email": "invalid@example.com", "password": "wrongpassword"}
+    {"email": "invalid@example.com", "password": "wrongpassword"},
+    {"email": "sebas.2571@gmail.com", "password": "soto2571"}
 ]
 
 for user in users:
